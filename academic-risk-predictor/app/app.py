@@ -7,9 +7,9 @@ import sys
 # Ensure the parent directory is in sys.path so we can import app.pages
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.pages.predict import show_predict_page
-from app.pages.analytics import show_analytics_page
-from app.pages.export import show_export_page
+from pages.predict import show_predict_page
+from pages.analytics import show_analytics_page
+from pages.export import show_export_page
 
 # 1. Page Config
 st.set_page_config(page_title="Academic Risk Predictor", page_icon="🎓", layout="wide")
