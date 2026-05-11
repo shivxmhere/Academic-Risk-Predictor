@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
 def highlight_rows(row):
     val = row['Predicted Risk']
     if val == 'High Risk':
-        return ['background-color: #FEE2E2'] * len(row)
+        return ['background-color: #FEE2E2; color: #000000; font-weight: 500;'] * len(row)
     elif val == 'Medium Risk':
-        return ['background-color: #FEF9C3'] * len(row)
+        return ['background-color: #FEF9C3; color: #000000; font-weight: 500;'] * len(row)
     elif val == 'Low Risk':
-        return ['background-color: #DCFCE7'] * len(row)
+        return ['background-color: #DCFCE7; color: #000000; font-weight: 500;'] * len(row)
     return [''] * len(row)
 
 def show_predict_page():
